@@ -34,3 +34,8 @@ To maintain an efficient context window, use this index to find and read only th
 -   **Git Branching Strategy**: `docs/branching-strategy.md`
 -   **Automated Testing**: `docs/testing.md`
 -   **Deployment & Hosting**: `docs/deployment.md`
+
+## 5. Guiding Principles
+
+-   **Analyze Before Acting**: For any significant technical decision (e.g., choice of a new library, package manager, architectural pattern), you must first present a balanced analysis of the available options. Make a recommendation based on this analysis and the project's context.
+-   **Confirm Before Implementing**: After presenting the analysis and recommendation, you must always ask for final approval from the user before proceeding with the implementation of the choice.
