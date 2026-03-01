@@ -65,6 +65,7 @@ export default function Home() {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
+          minHeight: '100vh',
         }}
       >
         <Typography variant="h1" component="h1" sx={{ mb: 2 }}>
