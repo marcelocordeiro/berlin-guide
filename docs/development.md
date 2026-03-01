@@ -32,7 +32,7 @@ This automated workflow means that all code pushed to the repository is guarante
 
 ## Feature Development Workflow (SDLC)
 
-All new features, bug fixes, or significant changes must follow this structured Software Development Lifecycle (SDLC) to ensure quality, clarity, and alignment. The process involves acting in distinct roles.
+All new features, bug fixes, or significant changes must follow this structured Software Development Lifecycle (SDLC) to ensure quality, clarity, and alignment. The process involves acting in distinct roles, with a strong emphasis on **committing only fully verified changes.**
 
 **1. Specification Phase**
 
@@ -47,18 +47,20 @@ All new features, bug fixes, or significant changes must follow this structured 
 **2. Implementation Phase (Senior Engineer Role)**
 
 - **Action:** Announce the role: "Acting as the Senior Engineer..."
-- **Details:** Implement the feature precisely according to the created Tech Spec.
+- **Details:** Implement the feature precisely according to the created Tech Spec. After implementation, run local quality checks (`npm run format:write`, `npm run lint`) to ensure code quality _before_ handing it over for QA. **No commits are made at this stage.**
 
 **3. Verification Phase (Senior QA Agent Role)**
 
 - **Action:** Announce the role: "Acting as the Senior QA Agent..."
 - **Details:** After implementation is complete, rigorously test the feature against the Tech Spec and the QA Plan. This involves:
   - **Code Review:** Analyzing the implementation for correctness and adherence to standards.
-  - **Browser Testing:** Using the **Gasoline MCP Server** to perform live browser checks, including DOM inspection, accessibility analysis, taking screenshots to verify visual output, and **checking console logs for errors or warnings**.
-    **4. Iteration Loop**
+  - **Browser Testing:** Using **`chrome-devtools`** tools (e.g., `navigate_page`, `list_console_messages`, `click`, `take_screenshot`) to perform live browser checks, including DOM inspection, accessibility analysis, taking screenshots to verify visual output, and checking console logs for errors or warnings.
+
+**4. Iteration Loop & Final Commit**
 
 - If the Senior QA Agent finds **any** bugs, visual discrepancies, or deviations from the specs, they will compile a detailed list of issues.
 - The list is handed back to the **Senior Engineer Role** for fixing.
-- The process repeats from Step 2 until the Senior QA Agent finds zero errors.
+- The **Engineer** fixes the issues, runs local quality checks, and hands it back to **QA**, repeating this cycle until the **Senior QA Agent finds zero errors.**
+- **ONLY THEN** is the feature considered complete, and the Engineer will perform a single, final commit for the verified changes.
 
 This cycle ensures that every feature is built to spec and is of high quality before completion.

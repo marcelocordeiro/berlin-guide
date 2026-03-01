@@ -4,11 +4,6 @@
 
 Kiez is a cross-platform application for personalized walking tours. Its unique mission is to blend major landmarks with authentic local discovery, helping users explore the unique character of a city's neighborhoods ("Kiez").
 
-## Project Status
-
-- **Phase:** Development
-- **Current Status:** Completed Task 1.1: Complete Tour Customization Form. All accessibility issues resolved, and feature is fully QA Approved. (Automated accessibility tool remains blocked.)
-
 ## Roadmap
 
 This project is being built in phases. The high-level roadmap is as follows:
