@@ -7,7 +7,7 @@ Kiez is a cross-platform application for personalized walking tours. Its unique 
 ## Project Status
 
 - **Phase:** Development
--   **Current Status:** Due to a tool limitation leading to misinterpretation, an unnecessary debugging loop for a hydration mismatch occurred. The bug was already fixed. The correct and robust client-side rendering implementation has been restored and is pending re-verification.
+-   **Current Status:** Accessibility issues related to missing form labels and IDs were discovered in the console logs. A fix has been implemented and is pending re-verification.
 
 ## Roadmap
 

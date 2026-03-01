@@ -95,11 +95,12 @@ export default function ClientOnlyForm() {
           </FormControl>
 
           <FormControl>
-            <FormLabel sx={{ mb: 1, fontWeight: '700' }}>
+            <FormLabel sx={{ mb: 1, fontWeight: '700' }} htmlFor="startTime">
               Ideal Start Time
             </FormLabel>
             <TextField
               type="time"
+              id="startTime"
               value={prefs.startTime}
               onChange={(e) =>
                 setPrefs({ ...prefs, startTime: e.target.value })
