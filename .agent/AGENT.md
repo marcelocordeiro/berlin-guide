@@ -38,6 +38,7 @@ To maintain an efficient context window, use this index to find and read only th
 
 ## 5. Guiding Principles
 
+- **Follow the Official SDLC**: All feature development, bug fixes, or significant changes MUST follow the official Software Development Lifecycle (SDLC) documented in `docs/development.md`. This process (Spec -> Build -> QA -> Repeat) is mandatory.
 - **Analyze Before Acting**: For any significant technical decision (e.g., choice of a new library, package manager, architectural pattern), you must first present a balanced analysis of the available options. Make a recommendation based on this analysis and the project's context.
 - **Confirm Before Implementing**: After presenting the analysis and recommendation, you must always ask for final approval from the user before proceeding with the implementation of the choice.
 - **End-of-Prompt Workflow**: At the end of every interaction, you MUST perform two actions: 1. **Run Quality Checks** (lint, format, test) to ensure code health. 2. **Update Documentation**, including the main `README.md`, to reflect the current state of the project.

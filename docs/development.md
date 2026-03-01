@@ -27,3 +27,39 @@ To ensure a high-quality and consistent codebase, this project uses a set of aut
 - **Husky & lint-staged:** We use Husky to manage Git hooks. A `pre-commit` hook is configured to run `lint-staged`. This script ensures that Prettier and ESLint are run on all staged files before they can be committed.
 
 This automated workflow means that all code pushed to the repository is guaranteed to be formatted and linted according to our defined standards.
+
+---
+
+## Feature Development Workflow (SDLC)
+
+All new features, bug fixes, or significant changes must follow this structured Software Development Lifecycle (SDLC) to ensure quality, clarity, and alignment. The process involves acting in distinct roles.
+
+**1. Specification Phase**
+
+- **Action:** Create a **Tech Spec** document.
+- **Details:** This document describes in extensive detail _how_ the feature will be implemented from a technical perspective, but without writing the code itself. It should cover components, state management, data flow, and API interactions.
+- **Location:** `docs/features/[feature-name]-tech-spec.md`
+
+- **Action:** Create a **QA Plan** document.
+- **Details:** This document describes how the feature will be tested. It must include positive cases (happy paths), negative cases (error conditions, edge cases), and a section on usability/UX review.
+- **Location:** `docs/features/[feature-name]-qa-plan.md`
+
+**2. Implementation Phase (Senior Engineer Role)**
+
+- **Action:** Announce the role: "Acting as the Senior Engineer..."
+- **Details:** Implement the feature precisely according to the created Tech Spec.
+
+**3. Verification Phase (Senior QA Agent Role)**
+
+- **Action:** Announce the role: "Acting as the Senior QA Agent..."
+- **Details:** After implementation is complete, rigorously test the feature against the Tech Spec and the QA Plan. This involves:
+  - **Code Review:** Analyzing the implementation for correctness and adherence to standards.
+  - **Browser Testing:** Using the **Gasoline MCP Server** to perform live browser checks, including DOM inspection, accessibility analysis, and taking screenshots to verify visual output.
+
+**4. Iteration Loop**
+
+- If the Senior QA Agent finds **any** bugs, visual discrepancies, or deviations from the specs, they will compile a detailed list of issues.
+- The list is handed back to the **Senior Engineer Role** for fixing.
+- The process repeats from Step 2 until the Senior QA Agent finds zero errors.
+
+This cycle ensures that every feature is built to spec and is of high quality before completion.
