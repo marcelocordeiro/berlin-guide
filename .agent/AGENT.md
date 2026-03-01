@@ -11,7 +11,7 @@ Your goal is to help build **"Kiez,"** a cross-platform application for personal
 ## 2. Core Technologies
 
 -   **Full-Stack & Web App:** Next.js (React/TypeScript)
--   **Styling:** Tailwind CSS & MUI (Material-UI) v5
+-   **Styling:** MUI (Material-UI) v5 with Material 3 (Expressive Style) & Tailwind CSS
 -   **Native Mobile Apps:** Compose Multiplatform (Kotlin)
 -   **Database:** PostgreSQL with PostGIS
 -   **Mapping & Navigation:** Mapbox
