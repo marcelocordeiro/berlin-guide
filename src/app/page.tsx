@@ -60,12 +60,10 @@ export default function Home() {
     <Container maxWidth="md">
       <Box
         sx={{
-          my: 4,
+          py: 8,
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'center',
           alignItems: 'center',
-          minHeight: '100vh',
         }}
       >
         <Typography variant="h1" component="h1" sx={{ mb: 2 }}>
