@@ -10,32 +10,33 @@ Your goal is to help build **"Kiez,"** a cross-platform application for personal
 
 ## 2. Core Technologies
 
--   **Full-Stack & Web App:** Next.js (React/TypeScript)
--   **Styling:** MUI (Material-UI) v5 with Material 3 (Expressive Style) & Tailwind CSS
--   **Native Mobile Apps:** Compose Multiplatform (Kotlin)
--   **Database:** PostgreSQL with PostGIS
--   **Mapping & Navigation:** Mapbox
--   **Testing:** Vitest, React Testing Library, Playwright
+- **Full-Stack & Web App:** Next.js (React/TypeScript)
+- **Styling:** MUI (Material-UI) v5 with Material 3 (Expressive Style) & Tailwind CSS
+- **Native Mobile Apps:** Compose Multiplatform (Kotlin)
+- **Database:** PostgreSQL with PostGIS
+- **Mapping & Navigation:** Mapbox
+- **Testing:** Vitest, React Testing Library, Playwright
 
 ## 3. Key Commands
 
 This section will be updated as the project is scaffolded.
 
--   **Run development server:** `npm run dev`
--   **Run unit tests:** `npm test`
--   **Run E2E tests:** `npm run test:e2e`
+- **Run development server:** `npm run dev`
+- **Run unit tests:** `npm test`
+- **Run E2E tests:** `npm run test:e2e`
 
 ## 4. Documentation Index
 
 To maintain an efficient context window, use this index to find and read only the specific document you need for your current task.
 
--   **Architecture & High-Level Decisions**: `docs/architecture.md`
--   **Local Development Setup**: `docs/development.md`
--   **Git Branching Strategy**: `docs/branching-strategy.md`
--   **Automated Testing**: `docs/testing.md`
--   **Deployment & Hosting**: `docs/deployment.md`
+- **Architecture & High-Level Decisions**: `docs/architecture.md`
+- **Local Development Setup**: `docs/development.md`
+- **Git Branching Strategy**: `docs/branching-strategy.md`
+- **Automated Testing**: `docs/testing.md`
+- **Deployment & Hosting**: `docs/deployment.md`
 
 ## 5. Guiding Principles
 
--   **Analyze Before Acting**: For any significant technical decision (e.g., choice of a new library, package manager, architectural pattern), you must first present a balanced analysis of the available options. Make a recommendation based on this analysis and the project's context.
--   **Confirm Before Implementing**: After presenting the analysis and recommendation, you must always ask for final approval from the user before proceeding with the implementation of the choice.
+- **Analyze Before Acting**: For any significant technical decision (e.g., choice of a new library, package manager, architectural pattern), you must first present a balanced analysis of the available options. Make a recommendation based on this analysis and the project's context.
+- **Confirm Before Implementing**: After presenting the analysis and recommendation, you must always ask for final approval from the user before proceeding with the implementation of the choice.
+- **End-of-Prompt Workflow**: At the end of every interaction, you MUST perform two actions: 1. **Run Quality Checks** (lint, format, test) to ensure code health. 2. **Update Documentation**, including the main `README.md`, to reflect the current state of the project.
