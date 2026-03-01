@@ -54,9 +54,8 @@ All new features, bug fixes, or significant changes must follow this structured 
 - **Action:** Announce the role: "Acting as the Senior QA Agent..."
 - **Details:** After implementation is complete, rigorously test the feature against the Tech Spec and the QA Plan. This involves:
   - **Code Review:** Analyzing the implementation for correctness and adherence to standards.
-  - **Browser Testing:** Using the **Gasoline MCP Server** to perform live browser checks, including DOM inspection, accessibility analysis, and taking screenshots to verify visual output.
-
-**4. Iteration Loop**
+  - **Browser Testing:** Using the **Gasoline MCP Server** to perform live browser checks, including DOM inspection, accessibility analysis, taking screenshots to verify visual output, and **checking console logs for errors or warnings**.
+    **4. Iteration Loop**
 
 - If the Senior QA Agent finds **any** bugs, visual discrepancies, or deviations from the specs, they will compile a detailed list of issues.
 - The list is handed back to the **Senior Engineer Role** for fixing.
