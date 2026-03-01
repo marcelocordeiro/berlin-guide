@@ -174,10 +174,13 @@ export default function ClientOnlyForm() {
           )}
 
           <FormControl fullWidth>
-            <FormLabel sx={{ mb: 1, fontWeight: '700' }}>
+            <FormLabel sx={{ mb: 1, fontWeight: '700' }} id="interestsLabel">
               I&apos;m interested in...
             </FormLabel>
-            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+            <Box
+              sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}
+              aria-labelledby="interestsLabel"
+            >
               {INTEREST_OPTIONS.map((interest) => (
                 <Chip
                   key={interest}
