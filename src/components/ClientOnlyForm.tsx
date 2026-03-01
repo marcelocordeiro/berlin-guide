@@ -59,7 +59,10 @@ export default function ClientOnlyForm() {
       <Box component="form" noValidate autoComplete="off">
         <Stack spacing={4}>
           <FormControl fullWidth>
-            <FormLabel sx={{ mb: 1, fontWeight: '700' }}>
+            <FormLabel
+              sx={{ mb: 1, fontWeight: '700' }}
+              htmlFor="tourDurationSlider"
+            >
               Tour Duration (hours)
             </FormLabel>
             <Slider
@@ -73,11 +76,15 @@ export default function ClientOnlyForm() {
               marks
               min={1}
               max={8}
+              id="tourDurationSlider"
             />
           </FormControl>
 
           <FormControl fullWidth>
-            <FormLabel sx={{ mb: 1, fontWeight: '700' }}>
+            <FormLabel
+              sx={{ mb: 1, fontWeight: '700' }}
+              htmlFor="maxDistanceSlider"
+            >
               Max Walking Distance (km)
             </FormLabel>
             <Slider
@@ -91,6 +98,7 @@ export default function ClientOnlyForm() {
               marks
               min={2}
               max={20}
+              id="maxDistanceSlider"
             />
           </FormControl>
 
@@ -122,6 +130,7 @@ export default function ClientOnlyForm() {
                   onChange={(e) =>
                     setPrefs({ ...prefs, isMultiDay: e.target.checked })
                   }
+                  id="multiDaySwitch" // Add id to switch
                 />
               }
               label="Split across multiple days?"
@@ -133,6 +142,7 @@ export default function ClientOnlyForm() {
                   onChange={(e) =>
                     setPrefs({ ...prefs, includeMeals: e.target.checked })
                   }
+                  id="includeMealsSwitch" // Add id to switch
                 />
               }
               label="Include a meal break?"
@@ -141,7 +151,10 @@ export default function ClientOnlyForm() {
 
           {prefs.includeMeals && (
             <FormControl fullWidth>
-              <FormLabel sx={{ mb: 1, fontWeight: '700' }}>
+              <FormLabel
+                sx={{ mb: 1, fontWeight: '700' }}
+                htmlFor="mealDurationSlider"
+              >
                 Meal Break Duration (hours)
               </FormLabel>
               <Slider
@@ -155,6 +168,7 @@ export default function ClientOnlyForm() {
                 marks
                 min={1}
                 max={3}
+                id="mealDurationSlider"
               />
             </FormControl>
           )}
