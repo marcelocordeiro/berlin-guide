@@ -174,9 +174,14 @@ export default function ClientOnlyForm() {
           )}
 
           <FormControl fullWidth>
-            <FormLabel sx={{ mb: 1, fontWeight: '700' }}>
+            <FormLabel
+              sx={{ mb: 1, fontWeight: '700' }}
+              htmlFor="interestsHiddenInput"
+            >
               I&apos;m interested in...
             </FormLabel>
+            <input type="hidden" id="interestsHiddenInput" />{' '}
+            {/* Hidden input for accessibility association */}
             <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
               {INTEREST_OPTIONS.map((interest) => (
                 <Chip
