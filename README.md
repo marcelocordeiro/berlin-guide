@@ -7,7 +7,7 @@ Kiez is a cross-platform application for personalized walking tours. Its unique 
 ## Project Status
 
 - **Phase:** Development
--   **Current Status:** The final accessibility issue, related to the 'I&apos;m interested in...' form control and chip group, was addressed with semantic accessibility attributes for the chips. The fix has been implemented and is pending final re-verification.
+-   **Current Status:** The last accessibility issue in the 'I&apos;m interested in...' section was addressed by refining the `FormControl` markup. This fix is pending re-verification.
 
 ## Roadmap
 
