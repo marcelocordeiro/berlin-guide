@@ -30,6 +30,7 @@ This section will be updated as the project is scaffolded.
 To maintain an efficient context window, use this index to find and read only the specific document you need for your current task.
 
 - **Architecture & High-Level Decisions**: `docs/architecture.md`
+- **Project Roadmap & Plan**: `docs/development-plan.md`
 - **Local Development Setup**: `docs/development.md`
 - **Git Branching Strategy**: `docs/branching-strategy.md`
 - **Automated Testing**: `docs/testing.md`
