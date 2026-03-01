@@ -6,7 +6,7 @@ This file is your primary entry point. Do not proceed with any task without firs
 
 ## 1. Project Mission
 
-Your goal is to help build **"Berlin Guide,"** a cross-platform application for personalized, self-guided walking tours. The app will feature a responsive web/PWA front-end and native mobile apps, all powered by a Next.js backend. The user experience and design must be modern, intuitive, and polished.
+Your goal is to help build **"Kiez,"** a cross-platform application for personalized walking tours. The app's unique mission is to blend major landmarks with authentic local discovery, helping users explore the unique character of a city's neighborhoods ("Kiez"). The app will feature a responsive web/PWA front-end and native mobile apps, all powered by a Next.js backend, with a modern, intuitive, and polished design.
 
 ## 2. Core Technologies
 
