@@ -54,7 +54,7 @@ All new features, bug fixes, or significant changes must follow this structured 
 - **Action:** Announce the role: "Acting as the Senior QA Agent..."
 - **Details:** After implementation is complete, rigorously test the feature against the Tech Spec and the QA Plan. This involves:
   - **Code Review:** Analyzing the implementation for correctness and adherence to standards.
-  - **Browser Testing:** Using **`chrome-devtools`** tools (e.g., `navigate_page`, `list_console_messages`, `click`, `take_screenshot`) to perform live browser checks, including DOM inspection, accessibility analysis, taking screenshots to verify visual output, and checking console logs for errors or warnings.
+  - **Browser Testing:** Using **`chrome-devtools`** tools (e.g., `navigate_page`, `list_console_messages`, `click`, `take_screenshot`) to perform live browser checks, including DOM inspection, accessibility analysis, taking screenshots to verify visual output, and checking console logs for errors or warnings **after every interaction with the page**.
 
 **4. Iteration Loop & Final Commit**
 
