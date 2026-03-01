@@ -190,6 +190,9 @@ export default function ClientOnlyForm() {
                     prefs.interests.includes(interest) ? 'filled' : 'outlined'
                   }
                   color="primary"
+                  role="checkbox"
+                  aria-checked={prefs.interests.includes(interest)}
+                  aria-label={interest}
                 />
               ))}
             </Box>
