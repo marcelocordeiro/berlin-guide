@@ -65,6 +65,7 @@ export default function Home() {
           flexDirection: 'column',
           alignItems: 'center',
         }}
+        suppressHydrationWarning={true}
       >
         <Typography variant="h1" component="h1" sx={{ mb: 2 }}>
           Create Your Kiez Tour
