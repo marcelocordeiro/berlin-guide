@@ -12,9 +12,9 @@ _This phase must be completed first as it provides the foundation for all other 
   - **Goal:** Implemented all remaining UI controls on the main page (`/src/app/page.tsx`).
   - **Details:** All form controls, including sliders, switches, text field, and interest chips, along with their state management and accessibility attributes, have been successfully implemented.
 
-- **Task 1.2: Implement Dark Mode Toggle**
-  - **Goal:** Create a functional light/dark mode toggle button.
-  - **Details:** The button will update the application's theme and persist the user's preference in their browser (`localStorage`).
+- **Task 1.2: Implement Dark Mode Toggle** - **[COMPLETED]**
+  - **Goal:** Created a functional light/dark mode toggle button.
+  - **Details:** The toggle button correctly switches between light and dark themes, persists user preference in `localStorage`, and ensures the UI adapts appropriately. All QA checks passed.
 
 ---
 
