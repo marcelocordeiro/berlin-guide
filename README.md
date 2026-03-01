@@ -7,7 +7,7 @@ Kiez is a cross-platform application for personalized walking tours. Its unique 
 ## Project Status
 
 - **Phase:** Development
--   **Current Status:** A critical React hydration mismatch error was discovered during QA. A more robust fix relying solely on client-side rendering (without `suppressHydrationWarning`) has been implemented and is pending re-verification.
+-   **Current Status:** Due to a tool limitation leading to misinterpretation, an unnecessary debugging loop for a hydration mismatch occurred. The bug was already fixed. The correct and robust client-side rendering implementation has been restored and is pending re-verification.
 
 ## Roadmap
 
